@@ -40,11 +40,11 @@
   .card h3{margin-bottom:12px;color:var(--accent);}
   .card p{color:var(--muted);}
 
-  /* Contact Form */
-  form{display:flex;flex-direction:column;gap:12px;max-width:400px;}
+  /* Contact Form & WhatsApp */
+  .contact-options{display:flex;flex-direction:column;gap:12px;max-width:400px;}
   input, textarea{padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:var(--card);color:var(--text);}
-  button.submit{background:var(--accent);border:none;padding:12px;font-weight:700;color:#0b1220;border-radius:6px;cursor:pointer;}
-  button.submit:hover{opacity:0.85;}
+  button.submit, .contact-options button{background:var(--accent);border:none;padding:12px;font-weight:700;color:#0b1220;border-radius:6px;cursor:pointer;}
+  button.submit:hover, .contact-options button:hover{opacity:0.85;}
 
   /* Footer */
   footer{text-align:center;padding:20px;background:var(--card);color:var(--muted);}
@@ -99,12 +99,20 @@
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email Address" required>
-    <textarea rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit" class="submit">Send Message</button>
-  </form>
+  <div class="contact-options">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/8801772810062?text=Hello%20Peradox%20Trading,%20I%20want%20to%20contact%20you" target="_blank">
+      <button>Contact via WhatsApp</button>
+    </a>
+
+    <!-- Optional: Add a contact form if you want -->
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
 <footer>
