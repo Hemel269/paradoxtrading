@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peradox Trading - Trading & Investment</title>
+<style>
+  /* Reset */
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+
+  /* Colors */
+  :root{
+    --bg:#0b1220;
+    --text:#e6eef8;
+    --accent:#34d399;
+    --card:#0f1724;
+    --muted:#9aa6c1;
+  }
+
+  body{background:var(--bg);color:var(--text);line-height:1.6;}
+  a{text-decoration:none;color:inherit;}
+
+  /* Header / Navbar */
+  header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:var(--card);}
+  header h1{color:var(--accent);}
+  nav a{margin-left:20px;color:var(--text);font-weight:600;}
+  nav a:hover{color:var(--accent);}
+
+  /* Sections */
+  section{padding:60px 40px;}
+  .hero{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;height:80vh;background:linear-gradient(90deg,#071028,#0b1220);}
+  .hero h2{font-size:48px;color:var(--accent);margin-bottom:20px;}
+  .hero p{max-width:600px;margin-bottom:30px;color:var(--muted);}
+  .hero button{padding:12px 24px;background:var(--accent);border:none;border-radius:6px;color:#0b1220;font-weight:700;cursor:pointer;}
+  .hero button:hover{opacity:0.85;}
+
+  /* Cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:40px;}
+  .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.5);}
+  .card h3{margin-bottom:12px;color:var(--accent);}
+  .card p{color:var(--muted);}
+
+  /* Contact Form */
+  form{display:flex;flex-direction:column;gap:12px;max-width:400px;}
+  input, textarea{padding:10px;border-radius:6px;border:1px solid rgba(255,255,255,0.1);background:var(--card);color:var(--text);}
+  button.submit{background:var(--accent);border:none;padding:12px;font-weight:700;color:#0b1220;border-radius:6px;cursor:pointer;}
+  button.submit:hover{opacity:0.85;}
+
+  /* Footer */
+  footer{text-align:center;padding:20px;background:var(--card);color:var(--muted);}
+
+  /* Responsive */
+  @media(max-width:768px){
+    header{flex-direction:column;align-items:flex-start;}
+    nav a{margin-left:0;margin-top:10px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Peradox Trading</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Grow Your Wealth with Confidence</h2>
+  <p>Peradox Trading provides expert trading advice, market insights, and investment strategies to help you reach your financial goals.</p>
+  <button>Get Started</button>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Peradox Trading is a leading trading and investment company dedicated to helping clients achieve financial success. Our team of experts offers personalized guidance for all levels of investors.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Trading</h3>
+      <p>We provide professional trading services across stocks, crypto, and forex markets with tailored strategies.</p>
+    </div>
+    <div class="card">
+      <h3>Market Analysis</h3>
+      <p>Get in-depth market analysis, predictions, and risk assessments to make informed investment decisions.</p>
+    </div>
+    <div class="card">
+      <h3>Investment Planning</h3>
+      <p>Plan your portfolio with our expert advisors to maximize returns and minimize risks for long-term growth.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Peradox Trading. All Rights Reserved.
+</footer>
+
+</body>
+</html>
